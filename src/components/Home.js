@@ -6,28 +6,29 @@ export default function Home(){
     const [search,setSearch] = useState('');
     const [data,setData] = useState([]);
     useEffect(()=>{
-        axios.get('https://api.coinstats.app/public/v1/coins?skip=0&limit=50&currency=INR').then(
+        axios.get('https://api.coinstats.app/public/v1/coins?skip=0&limit=100&currency=INR').then(
             res => {
                 console.log(res.data.coins);
                 setData(res.data.coins);
             });
             
     },[])
+
+    const filterData = data.filter((coin)=>{
+        return coin.name.toLowerCase().includes(search.toLowerCase());
+    });
     
-    const handler = event =>{
-        setSearch(event.target.value);
-        
-    }
+  
 
     return(
         <>
         <div className="navigation">
             <h1 className="heading">Online Crypto Tracker</h1>
-            <input value={search} onChange={handler} className="search" placeholder=' Search for Crypto'/>
+            <input value={search} onChange={(event) => {setSearch(event.target.value)}} className="search" placeholder=' Search for Crypto'/>
         </div>
 
         <div className="container">
-            {data.map(crypto =>
+            {filterData.map(crypto =>
         <div className="crypto-card">
             <img src={crypto.icon} className="crypto-img" alt="" />
             <h2>{crypto.name}</h2>

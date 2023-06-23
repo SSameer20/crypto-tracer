@@ -45,6 +45,10 @@
     border: solid 0.1mm;
     box-shadow: black 1px 1px 5px 0.1px;
 }
+.crypto-card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 .container{
     display: grid;
     grid-template-columns: auto auto auto auto;
