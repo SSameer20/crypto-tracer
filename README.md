@@ -1,3 +1,18 @@
+# Updates required
+1. Sorting feature to sort cryptos according to their values
+2. Searching Option where user can search by name
+
+# Resources Used
+ API : https://api.coinstats.app/public/v1/coins?skip=0&limit={limit}&currency={currency}
+ CURRENCY : INR
+ LIMIT : 50
+
+# Required Modules or Packages
+ 1. Axios
+    npm i axios   // command to install axios
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

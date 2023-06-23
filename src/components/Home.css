@@ -5,13 +5,13 @@
 .navigation{
     width: 100vw;
     height: 10vh;
-    background-color: blueviolet;
+    background-color:rgb(32, 21, 42);
     display: flex;
     flex-direction: row;
 }
 .search{
     height: 5vh;
-    border-radius:25px;
+    border-radius:5px;
     width: 30vw;
     border:none;
     margin-top: 2vh;
@@ -30,14 +30,26 @@
     height: auto;
     margin-left: 2vh;
 }
-
+::placeholder{
+    padding-left: 10px;
+}
 .crypto-card{
-    margin: 5vh;
-    width: 30vh;
-    background-color: rgb(249, 245, 245);
+    text-align: center;
+
+    width: 37vh;
+    color: white;
+    background-color: rgb(32, 21, 42);
     padding: 20px;
     border-radius: 25px;
     align-items: center;
     border: solid 0.1mm;
     box-shadow: black 1px 1px 5px 0.1px;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 11vh;
+    row-gap: 5vh;
+    margin-left: 2vh;
+    margin-top: 5vh;
 }
