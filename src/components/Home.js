@@ -23,7 +23,7 @@ export default function Home(){
     return(
         <>
         <div className="navigation">
-            <h1 className="heading">Online Crypto Tracker</h1>
+            <h1 className="heading">Online Crypto Price Tracker</h1>
             <input value={search} onChange={(event) => {setSearch(event.target.value)}} className="search" placeholder=' Search for Crypto'/>
         </div>
 
