@@ -22,10 +22,10 @@ export default function Home() {
 
     return (
         <>
-            <div className="navigation">
-                <h1 className="heading">Online Crypto Tracker</h1>
-                <input value={search} onChange={(event) => { setSearch(event.target.value) }} className="search" placeholder=' Search for Crypto' />
-            </div>
+        <div className="navigation">
+            <h1 className="heading">Online Crypto Tracker</h1>
+            <input value={search} onChange={(event) => {setSearch(event.target.value)}} className="search" placeholder=' Search for Crypto'/>
+        </div>
 
             <div className="container">
                 {filterData.map(crypto =>
@@ -38,6 +38,7 @@ export default function Home() {
 
                     </div>
                 )}
+
 
             </div>
         </>
