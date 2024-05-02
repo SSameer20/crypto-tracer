@@ -1,6 +1,6 @@
 # Updates required
 1. Sorting feature to sort cryptos according to their values
-2. Searching Option where user can search by name
+2. Searching Option where user can search by name.
 
 # Resources Used
  API : https://api.coinstats.app/public/v1/coins?skip=0&limit={limit}&currency={currency}
@@ -80,7 +80,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-for Deployment we have used vercel and also for integration.
+for Deployment we have used vercel for server hosting.
 
 ### `npm run build` fails to minify
 
